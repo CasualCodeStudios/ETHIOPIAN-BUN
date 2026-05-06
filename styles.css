@@ -99,7 +99,7 @@
             padding: 5px;
         }
         .hamburger span {
-            width: 100%; height: 3px;
+            width: 100%; height: 2px;
             background: var(--gilt);
             transition: all 0.3s;
         }
