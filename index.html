@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Bun — Mombasa's Finest Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,500&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+    <a class="nav-brand" href="#"><img src="logo.png" alt="Logo" class="logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#drinks">Our Coffee</a></li>
+        <li><a href="#beans">Beans</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#contact" class="nav-cta">Order Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu" onclick="sidebarToggle()">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- SIDEBAR OVERLAY -->
+<!-- <div class="sidebar-overlay" id="sidebar-overlay"></div> -->
+<!-- SIDE BAR -->
+<div class="side-bar" id="side-bar">
+    <div class="side-bar-content">
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#drinks">Our Coffee</a></li>
+            <li><a href="#beans">Beans</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#contact">Order Now</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+    <!-- Left: text panel -->
+    <div class="hero-left">
+        <span class="hero-eyebrow">Welcome to</span>
+        <h1 class="hero-headline">
+            Ethiopian <br> <em>Bun</em>
+        </h1>
+        <img class="flag" src="ethiopian-flag.png" alt="ethiopian flag">
+        <img class="splash" src="coffee-splash-removebg-preview.png" alt="Ethiopian Bun">
+        <p class="hero-tagline">
+            Authentic Ethiopian coffee, rooted in centuries of tradition. From the highlands of Ethiopia to the heart of Mombasa — every cup tells a story.
+        </p>
+        <div class="hero-actions">
+            <a href="#menu" class="btn-gold">Explore Menu</a>
+            <a href="#story" class="btn-outline">Our Story</a>
+        </div>
+        <div class="hero-stats">
+            <div>
+                <div class="hero-stat-num">100%</div>
+                <div class="hero-stat-label">Pure Arabica</div>
+            </div>
+            <div>
+                <div class="hero-stat-num">4+</div>
+                <div class="hero-stat-label">Varieties</div>
+            </div>
+            <div>
+                <div class="hero-stat-num">10+ <span style="font-size:1rem">yrs</span></div>
+                <div class="hero-stat-label">Heritage</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right: full-bleed photo -->
+    <div class="hero-right">
+        <img
+            src="hero-2.jpg"
+            alt="Top-down shot of black coffee surrounded by coffee beans"
+            class="hero-img"
+        >
+        <div class="hero-text-overlay">
+            <div class="hero-big-word">Release</div>
+        </div>
+        <!-- Left icon strip -->
+        <div class="hero-icon-strip">
+            <div class="strip-icon active" title="Coffee Beans">🫘</div>
+            <div class="strip-icon" title="Brewed Coffee">☕</div>
+            <div class="strip-icon" title="Instant Coffee">🥄</div>
+            <div class="strip-icon" title="Cappuccino">🍵</div>
+        </div>
+        <!-- Right nav arrows -->
+        <div class="hero-nav-arrows">
+            <button class="arrow-btn" aria-label="Up">▲</button>
+            <button class="arrow-btn" aria-label="Down">▼</button>
+        </div>
+        <div class="hero-discover">Discover</div>
+    </div>
+</section>
+
+<div class="divider-bar"></div>
+
+<!-- ─── MENU STRIP ─── -->
+<section class="menu-strip" id="menu">
+    <div class="menu-strip-header reveal">
+        <div>
+            <p class="section-label">What We Serve</p>
+            <h2 class="section-title" style="color:var(--cream);">Our <em>Menu</em></h2>
+        </div>
+        <a href="#contact" class="btn-gold" style="white-space:nowrap;">Order Now</a>
+    </div>
+    <div class="menu-cards">
+        <div class="menu-card reveal reveal-delay-2 card-2">
+            <div class="menu-card-name">Instant Sachets</div>
+            <p class="menu-card-desc">100% pure Arabica instant coffee. Premium taste, ready in seconds — wherever you are.</p>
+            <div class="menu-card-price">From KES 100 <span>/ sachet</span></div>
+        </div>
+        <div class="menu-card reveal reveal-delay-1 card-1">
+            <div class="menu-card-name">Brewed Coffee</div>
+            <p class="menu-card-desc">Traditional Ethiopian brewed coffee prepared with care. Bold, aromatic, unforgettable.</p>
+            <div class="menu-card-price">From KES 350 <span>/ cup</span></div>
+        </div>
+        <div class="menu-card reveal reveal-delay-3 card-3">
+            <div class="menu-card-name">Whole Beans</div>
+            <p class="menu-card-desc">Freshly roasted highland beans, sourced direct from Ethiopia. Grind to your preference.</p>
+            <div class="menu-card-price">From KES 800 <span>/ 250g</span></div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-bar"></div>
+
+<!-- ─── PRODUCT: COFFEE DRINKS ─── -->
+<section class="product-section" id="drinks">
+    <div class="product-photo-wrap reveal">
+        <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663609321492/LKbVefYQ3UcLNo7wtVQNZz/espresso-drink-fpety5U6yMpWCpGWeg7LbH.webp"
+            alt="Ethiopian Espresso"
+            class="product-photo"
+        >
+        <div class="photo-badge">
+            <div class="photo-badge-num">48hr</div>
+            <div class="photo-badge-label">Fresh Roast</div>
+        </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+        <div class="accent-bar"></div>
+        <p class="section-label">Signature Drinks</p>
+        <h2 class="section-title" style="color:var(--cream);">Traditional Coffee <em>Drinks</em></h2>
+        <p class="section-body">Each cup is prepared using time-honoured Ethiopian methods, drawing out flavours that have made Ethiopian coffee the world's finest. A journey through the highlands in every sip.</p>
+        <ul class="feature-list">
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>Rich Espresso</strong> — deep, bold, with perfect natural crema</span>
+            </li>
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>Cappuccino</strong> — velvety steamed milk meets our signature roast</span>
+            </li>
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>Americano</strong> — smooth, balanced, perfect any hour of the day</span>
+            </li>
+        </ul>
+        <a href="#contact" class="btn-gold">Order Drinks</a>
+    </div>
+</section>
+
+<div class="divider-bar"></div>
+
+<!-- ─── PRODUCT: INSTANT COFFEE (reversed) ─── -->
+<section class="product-section cream-bg reverse" id="instant">
+    <div class="product-photo-wrap reveal">
+        <img
+            src="hero-3.jpg"
+            alt="Premium Instant Coffee"
+            class="product-photo"
+        >
+        <div class="photo-badge">
+            <div class="photo-badge-num">100%</div>
+            <div class="photo-badge-label">Pure Arabica</div>
+        </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+        <div class="accent-bar"></div>
+        <p class="section-label">On The Go</p>
+        <h2 class="section-title" style="color:var(--cream);">Premium <em>Instant Coffee</em></h2>
+        <p class="section-body">Our instant sachets deliver the full Ethiopian experience in seconds. No compromise on taste — just pure, premium Arabica that dissolves into the perfect cup wherever life takes you.</p>
+        <ul class="feature-list">
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>Single-Serve Sachets</strong> — ideal for travel, office, and home</span>
+            </li>
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>No Additives</strong> — nothing but pure Ethiopian coffee inside</span>
+            </li>
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>Rich Aroma</strong> — opens your senses with every pour</span>
+            </li>
+        </ul>
+        <a href="#contact" class="btn-gold">Shop Sachets</a>
+    </div>
+</section>
+
+<div class="divider-bar"></div>
+
+<!-- ─── PRODUCT: WHOLE BEANS ─── -->
+<section class="product-section" id="beans">
+    <div class="product-photo-wrap reveal">
+        <img
+            src="https://i.pinimg.com/1200x/1e/c3/14/1ec314bc1d8bed7e1bd833ed9b8f3f47.jpg"
+            alt="Ethiopian Coffee Beans"
+            class="product-photo"
+        >
+        <div class="photo-badge">
+            <div class="photo-badge-num">Direct</div>
+            <div class="photo-badge-label">Source Ethiopia</div>
+        </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+        <div class="accent-bar"></div>
+        <p class="section-label">For Enthusiasts</p>
+        <h2 class="section-title" style="color:var(--cream);">Whole Coffee <em>Beans</em></h2>
+        <p class="section-body">Sourced directly from the Ethiopian highlands and roasted in small batches for maximum freshness. For the discerning coffee lover who demands full control from bean to cup.</p>
+        <ul class="feature-list">
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>Small-Batch Roasted</strong> — maximum freshness, minimum waste</span>
+            </li>
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>Direct Trade</strong> — sourced from the finest highland farms</span>
+            </li>
+            <li>
+                <span class="feature-check">✦</span>
+                <span><strong>Grind to Order</strong> — customise your grind size on request</span>
+            </li>
+        </ul>
+        <a href="#contact" class="btn-gold">Shop Beans</a>
+    </div>
+</section>
+
+<div class="divider-bar"></div>
+
+<!-- ─── ORIGIN STORY ─── -->
+<section class="origin-section" id="story">
+    <div class="origin-bg-word">Bun</div>
+    <div class="origin-inner">
+        <div class="reveal">
+            <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663609321492/LKbVefYQ3UcLNo7wtVQNZz/cappuccino-drink-H9FUTFKFjZ5dzibdutyhNE.webp"
+                alt="Specialty Cappuccino"
+                class="origin-photo"
+            >
+        </div>
+        <div class="reveal reveal-delay-1">
+            <div class="accent-bar"></div>
+            <p class="section-label">Our Heritage</p>
+            <h2 class="section-title">Where Every Cup<br>Has a <em>Story</em></h2>
+            <p class="section-body">
+                Ethiopia is the birthplace of coffee — where the first coffee plants grew wild in the Kaffa highlands over a thousand years ago. <em>Bun</em>, the Amharic word for coffee, is at the heart of Ethiopian culture, ceremony, and daily life.
+            </p>
+            <p class="section-body" style="margin-top:-0.5rem;">
+                We bring that heritage to Mombasa — authentic, uncompromised, and deeply rooted in tradition. Every product we offer is a direct connection to that origin.
+            </p>
+            <div class="origin-quote">
+                <p>"Coffee is our bread. It is our identity. It is our gift to the world."</p>
+                <cite>— Ethiopian Coffee Tradition</cite>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-bar"></div>
+
+<!-- ─── CONTACT ─── -->
+<section class="contact-section" id="contact">
+    <div class="contact-inner">
+        <div class="reveal" style="z-index: 12;">
+            <p class="section-label" style="text-align:left;">Find Us</p>
+            <h2 class="section-title" style="color:var(--cream);text-align:left;">Get in <em>Touch</em></h2>
+            <p style="font-size:0.95rem;color:var(--parchment);font-weight:300;margin-top:0.5rem;max-width:500px;line-height:1.8;
+            text-align: left;
+            z-index: 10;">
+                Located in Mombasa. We're ready to serve you authentic Ethiopian coffee — walk in, order ahead, or reach us directly.
+            </p>
+        </div>
+
+        <!-- COFFEE CUP IMAGE -->
+         <img src="splash-cup.png" alt="splashing coffee cup" class="cup-splash">
+        <div class="contact-cards reveal reveal-delay-1">
+            <div class="contact-card">
+                <span class="contact-card-icon"><img src="location.png" alt="location icon"></span>
+                <div class="contact-card-label">Location</div>
+                <div class="contact-card-value">Mombasa, Kenya</div>
+            </div>
+            <div class="contact-card">
+                <span class="contact-card-icon"><img src="phone-call.png" alt="phone icon"></span>
+                <div class="contact-card-label">Phone</div>
+                <div class="contact-card-value">+254 7XX XXX XXX</div>
+            </div>
+            <div class="contact-card">
+                <span class="contact-card-icon"><img src="whatsapp.png" alt="whatsapp icon"></span>
+                <div class="contact-card-label">WhatsApp</div>
+                <div class="contact-card-value">Message Anytime</div>
+            </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+            <a href="https://wa.me/254700000000" target="_blank" class="btn-gold" style="font-size:0.8rem;padding:1rem 2.5rem;">
+                Order on WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+    <div class="footer-brand">Ethiopian Bun · Mombasa</div>
+    <ul class="footer-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#drinks">Coffee</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">© 2026 Ethiopian Bun. All rights reserved.</div>
+</footer>
+
+<!-- ─── WhatsApp Float ─── -->
+<a href="https://wa.me/254700000000" class="wa-float" target="_blank" aria-label="WhatsApp"><img src="whatsapp.png" alt="whatsapp icon"></a>
+
+<script>
+    /* ── Nav scroll effect ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ── Scroll reveal ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ── Icon strip interaction ── */
+    document.querySelectorAll('.strip-icon').forEach(icon => {
+        icon.addEventListener('click', () => {
+            document.querySelectorAll('.strip-icon').forEach(i => i.classList.remove('active'));
+            icon.classList.add('active');
+        });
+    });
+
+    /* ── Smooth scroll ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+    });
+
+    // ── Sidebar toggle ──
+    const sidebar = document.getElementById('side-bar');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    function sidebarToggle() {
+        const isActive = sidebar.classList.toggle('active');
+        sidebarOverlay.style.display = isActive ? 'block' : 'none';
+    }
+
+    // siebar should also close if a link inside it is clicked
+    sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            sidebarOverlay.style.display = 'none';
+        });
+    });
+</script>
+</body>
+</html>
