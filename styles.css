@@ -91,7 +91,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 2px;
+            gap: 3px;
             cursor: pointer;
             background: none;
             border: 2px solid var(--gilt);
