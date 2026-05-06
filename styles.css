@@ -651,7 +651,7 @@
             font-family: var(--ff-display);
             font-size: 18rem;
             font-weight: 700;
-            color: rgba(62,39,35,0.04);
+            color: rgba(62,39,35,0.4);
             bottom: -3rem;
             right: -2rem;
             line-height: 1;
