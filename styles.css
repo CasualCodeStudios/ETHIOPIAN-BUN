@@ -163,7 +163,7 @@
             position: relative;
             min-height: 100vh;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 2fr 1fr;
             align-items: center;
             overflow: hidden;
             background: var(--espresso);
@@ -312,7 +312,7 @@
             object-fit: cover;
             filter: brightness(0.95) saturate(1.1);
             transform: scale(1.05);
-            animation: heroZoom 14s ease-out forwards;
+            animation: heroZoom 8s ease-out forwards;
         }
         /* Large typographic overlay on photo — like the hero-design.jpg */
         .hero-text-overlay {
