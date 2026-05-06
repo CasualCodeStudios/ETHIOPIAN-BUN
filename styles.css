@@ -94,10 +94,10 @@
             gap: 5px;
             cursor: pointer;
             background: none;
-            border: 1.5px solid var(--gilt);
+            border: none;
         }
         .hamburger span {
-            width: 24px; height: 2px;
+            width: 24px; height: 3px;
             background: var(--gilt);
             transition: all 0.3s;
         }
