@@ -20,6 +20,7 @@
         html { scroll-behavior: smooth; }
 
         body {
+                display: none;
             font-family: var(--ff-body);
             background: var(--espresso);
             color: var(--cream);
